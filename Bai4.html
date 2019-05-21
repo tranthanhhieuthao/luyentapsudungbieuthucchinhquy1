@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<!--kiem tra so bao mat hop le-->
+<script>
+    let regexp = /^[a-zA-Z]+[0-9a-zA-Z]{5,8}$/;
+    function checkpass(str) {
+        if (regexp.test(str)) return true
+        return false
+    }
+    console.log(checkpass("123assd5"));
+    console.log(checkpass("A23assd5"));
+
+</script>
+</body>
+</html>

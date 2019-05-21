@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+</head>
+<body>
+<!--// dem so nguyen am ,phu am trong 1 chuoi-->
+<script>
+    let patt =/[oaiueiAOIUE]/g;
+    let patt1=/\s/g;
+    function check(str) {
+        let result =str.match(patt);
+       let songuyenam = result.length;
+       let sophuam =str.length -songuyenam-str.match(patt1).length;
+       console.log("so nguyen am la"+" "+songuyenam+" "+"so phu am la"+" "+sophuam)
+    }
+    check("tran thanh hieu thAo");
+</script>
+</body>
+</html>
